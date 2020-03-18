@@ -117,6 +117,7 @@ export default class OTPInputView extends Component {
                     this.notifyCodeChanged()
                     onCodeFilled && onCodeFilled(code)
                 })
+                Clipboard.setString('');
             }
             this.clipBoardCode = code
             this.hasCheckedClipBoard = true
